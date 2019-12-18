@@ -1,0 +1,9 @@
+
+- name: Test ansible
+  gather_facts: no
+  
+  tasks:
+
+  - name: Re-run Script
+    command: "nohup {{PATH_SCRIPTS}}/script.sh {{ nom }} "
+    
